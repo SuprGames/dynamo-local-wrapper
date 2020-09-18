@@ -32,8 +32,10 @@ Kotlin Code for main Configuration
     repositories {
         // ...
         maven("https://jitpack.io")
+	maven("http://dynamodb-local.s3-website-us-west-2.amazonaws.com/release")
     }
 ```
+We are in jitpack.io and the internal Local dependency of DynamoLocal is in the DynamoLocal AWS S3 repo
 
 ```
 dependencies {
