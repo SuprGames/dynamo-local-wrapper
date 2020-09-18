@@ -34,7 +34,8 @@ object AwsDynamoDbLocalTestUtils {
     }
 
     /**
-     * Calculates the possible Library Names for finding the proper sqlite4j native library and returns the directory with the most specific matching library.
+     * Calculates the possible Library Names for finding the proper sqlite4j native library and returns the directory
+     * with the most specific matching library.
      *
      * @param osName      The value of `"os.name"` system property (`System.getProperty("os.name")`).
      * @param runtimeName The value of `"java.runtime.name"` system property (`System.getProperty("java.runtime.name")`).
@@ -59,10 +60,7 @@ object AwsDynamoDbLocalTestUtils {
     /**
      * Calculates the possible Library Names for finding the proper sqlite4java native library.
      *
-     * Based on the internal calculation of the sqlite4java wrapper [Internal
- * class](https://bitbucket
-    .org/almworks/sqlite4java/src/fa4bb0fe7319a5f1afe008284146ac83e027de60/java/com/almworks/sqlite4java/Internal
-    .java?at=master&fileviewer=file-view-default#Internal.java-160).
+     * Based on the internal calculation of the sqlite4java wrapper
      *
      * @param os   Operating System Name used by sqlite4java to get native library.
      * @param arch Operating System Architecture used by sqlite4java to get native library.
