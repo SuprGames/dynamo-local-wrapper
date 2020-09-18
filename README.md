@@ -29,17 +29,16 @@ Kotlin Code for main Configuration
 ### Import it!!!!
 
 ```
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    repositories {
+        // ...
+        maven("https://jitpack.io")
+    }
 ```
 
 ```
 dependencies {
-	        implementation 'io.suprgames:dynamo-local-wrapper:v0.1.0'
+    // ...
+    testImplementation("io.suprgames:dynamodb-local-wrapper:v0.1.0")
 }
 ```
 
