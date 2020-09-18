@@ -50,9 +50,9 @@ dependencies {
 ```
 class TestClass {
 
-	companion object {
+    companion object {
 
-		val localDynamoDb = LocalDynamoDb()
+        val localDynamoDb = LocalDynamoDb()
 
         @BeforeClass
         @JvmStatic
@@ -65,8 +65,8 @@ class TestClass {
         fun `Teardown DB`() {
             localDynamoDb.stop()
         }
-	}
-
+    }
+    
 }
 ```
 
@@ -84,17 +84,18 @@ The creation of the DynamoDb client it is straight forward:
 
 ```
 class TestClass {
-	
-	//Our companion object
-	...
 
-	// Creation of an AsynClient
-	val dynamoDbClient: DynamoDbAsyncClient = localDynamoDb.createAsyncClient()
+    //Our companion object
+    companion object {
+        //...
+    }
+
+    // Creation of an AsynClient
+    val dynamoDbClient: DynamoDbAsyncClient = localDynamoDb.createAsyncClient()
 
 
-	// Creation of a SyncClient
-	val dynamoDbClient: DynamoDbClient = localDynamoDb.createClient()
-
+    // Creation of a SyncClient
+    val dynamoDbClient: DynamoDbClient = localDynamoDb.createClient()
 
 }
 ```
