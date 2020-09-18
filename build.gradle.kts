@@ -40,6 +40,7 @@ dependencies {
     api("com.amazonaws:aws-lambda-java-log4j2:1.2.0")
     api("org.slf4j:slf4j-simple:1.7.30")
     api("com.github.stefanbirkner:system-rules:1.19.0")
+    testImplementation(kotlin("test-junit"))
 }
 
 publishing {
