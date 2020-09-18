@@ -26,6 +26,25 @@ Kotlin Code for main Configuration
 	localDynamoDb.stop();    
 ```
 
+### Import it!!!!
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```
+dependencies {
+	        implementation 'io.suprgames:dynamo-local-wrapper:v0.1.0'
+}
+```
+
+[![](https://jitpack.io/v/io.suprgames/dynamo-local-wrapper.svg)](https://jitpack.io/#io.suprgames/dynamo-local-wrapper)
+
 ### Set up the Test Class
 
 ```
