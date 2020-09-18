@@ -38,7 +38,7 @@ Kotlin Code for main Configuration
 ```
 dependencies {
     // ...
-    testImplementation("io.suprgames:dynamodb-local-wrapper:v0.1.0")
+    testImplementation("io.suprgames:dynamo-local-wrapper:v0.1.0")
 }
 ```
 
